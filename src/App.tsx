@@ -189,7 +189,7 @@ export function App() {
           <div className="flex items-center gap-1.5 sm:gap-2">
             {/* Social GitHub Link */}
             <a
-              href="https://github.com"
+              href="https://github.com/danglio/homnayuonggi"
               target="_blank"
               rel="noreferrer"
               className="p-2 sm:px-2.5 sm:py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 hover:text-white transition-all flex items-center gap-1.5 text-xs font-semibold"
@@ -426,7 +426,7 @@ export function App() {
 
           <div className="flex items-center gap-4 text-xs">
             <a
-              href="https://github.com"
+              href="https://github.com/danglio/homnayuonggi"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1.5 text-zinc-400 hover:text-white transition-colors"
