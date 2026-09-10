@@ -199,16 +199,16 @@ export function App() {
               <span className="hidden xl:inline">GitHub</span>
             </a>
 
-            {/* Social Facebook Share */}
+            {/* Social Facebook Page */}
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://homnayuonggi.vn')}`}
+              href="https://www.facebook.com/share/1BjrRKK3nE/?mibextid=wwXIfr"
               target="_blank"
               rel="noreferrer"
               className="p-2 sm:px-2.5 sm:py-2 rounded-xl bg-blue-900/30 hover:bg-blue-900/50 border border-blue-700/50 text-blue-300 hover:text-white transition-all flex items-center gap-1.5 text-xs font-semibold"
-              title="Chia sẻ lên Facebook"
+              title="Ghé thăm Facebook"
             >
               <FacebookIcon className="w-4 h-4 text-blue-400" />
-              <span className="hidden xl:inline">Chia Sẻ</span>
+              <span className="hidden xl:inline">Facebook</span>
             </a>
 
             <button
@@ -436,10 +436,11 @@ export function App() {
             </a>
             <span className="text-zinc-700">•</span>
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://homnayuonggi.vn')}`}
+              href="https://www.facebook.com/share/1BjrRKK3nE/?mibextid=wwXIfr"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1.5 text-blue-400 hover:text-blue-300 transition-colors"
+              title="Ghé thăm Facebook"
             >
               <FacebookIcon className="w-4 h-4" />
               <span>Facebook</span>
