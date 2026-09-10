@@ -150,7 +150,7 @@ export const FifaCard: React.FC<FifaCardProps> = ({
                   className="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-500"
                   onError={(e) => {
                     // Fallback to placeholder if missing
-                    (e.target as HTMLImageElement).src = '/warehouse.png';
+                    (e.target as HTMLImageElement).src = 'https://cdn.jsdelivr.net/gh/danglio/homnayuonggilio@gh-pages/warehouse.png';
                   }}
                 />
               </div>

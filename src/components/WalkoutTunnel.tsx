@@ -16,7 +16,7 @@ export const WalkoutTunnel: React.FC<WalkoutTunnelProps> = ({
       {/* First-Person EA FC 25 Walkout Tunnel Background */}
       <div
         style={{
-          backgroundImage: `url('/fifa-tunnel-run.jpg')`,
+          backgroundImage: `url('https://cdn.jsdelivr.net/gh/danglio/homnayuonggilio@gh-pages/fifa-tunnel-run.jpg')`,
           backgroundPosition: 'center 40%',
           backgroundSize: 'cover',
         }}

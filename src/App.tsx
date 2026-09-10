@@ -167,7 +167,7 @@ export function App() {
           <div className="flex items-center gap-3">
             <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-2xl overflow-hidden shadow-lg shadow-amber-500/25 border-2 border-amber-400/40 p-0.5 bg-zinc-900 group shrink-0">
               <img
-                src="/logo.png"
+                src="https://cdn.jsdelivr.net/gh/danglio/homnayuonggilio@gh-pages/logo.png"
                 alt="Hôm Nay Uống Gì Logo"
                 className="w-full h-full object-cover rounded-xl group-hover:scale-110 transition-transform duration-300"
               />
@@ -413,7 +413,7 @@ export function App() {
       <footer className="relative z-10 w-full py-6 text-xs text-zinc-500 border-t border-zinc-850 bg-zinc-950/70 backdrop-blur-md">
         <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2.5 text-center sm:text-left">
-            <img src="/logo.png" alt="Logo" className="w-7 h-7 rounded-lg border border-amber-400/30" />
+            <img src="https://cdn.jsdelivr.net/gh/danglio/homnayuonggilio@gh-pages/logo.png" alt="Logo" className="w-7 h-7 rounded-lg border border-amber-400/30" />
             <div>
               <p className="font-bold text-zinc-300">
                 Hôm Nay Uống Gì? • CS2 & EA FC Drink Roulette

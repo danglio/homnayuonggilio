@@ -11,20 +11,20 @@
 .bg-warehouse-theme {
   background: 
     linear-gradient(180deg, rgba(11, 15, 21, 0.82) 0%, rgba(15, 20, 28, 0.90) 50%, rgba(10, 13, 18, 0.96) 100%),
-    url('/warehouse.png') center/cover fixed;
+    url('https://cdn.jsdelivr.net/gh/danglio/homnayuonggilio@gh-pages/warehouse.png') center/cover fixed;
 }
 
 .bg-cafe-theme {
   background: 
     linear-gradient(180deg, rgba(16, 12, 10, 0.85) 0%, rgba(24, 18, 14, 0.90) 50%, rgba(12, 9, 8, 0.96) 100%),
-    url('/cafe-bg.jpg') center/cover fixed;
+    url('https://cdn.jsdelivr.net/gh/danglio/homnayuonggilio@gh-pages/cafe-bg.jpg') center/cover fixed;
 }
 
 /* Authentic EA FC / FIFA Online Stadium Stage Background */
 .bg-fifa-theme {
   background: 
     linear-gradient(180deg, rgba(5, 8, 16, 0.72) 0%, rgba(8, 13, 26, 0.80) 45%, rgba(4, 6, 12, 0.96) 100%),
-    url('/fifa-stadium-bg.jpg') center top/cover fixed;
+    url('https://cdn.jsdelivr.net/gh/danglio/homnayuonggilio@gh-pages/fifa-stadium-bg.jpg') center top/cover fixed;
 }
 
 @keyframes screenShake {
