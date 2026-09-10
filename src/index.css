@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #0b0f15;
+  }
+}
+
+/* Authentic CS2 Warehouse & Cozy Cafe Background */
+.bg-warehouse-theme {
+  background: 
+    linear-gradient(180deg, rgba(11, 15, 21, 0.82) 0%, rgba(15, 20, 28, 0.90) 50%, rgba(10, 13, 18, 0.96) 100%),
+    url('/warehouse.png') center/cover fixed;
+}
+
+.bg-cafe-theme {
+  background: 
+    linear-gradient(180deg, rgba(16, 12, 10, 0.85) 0%, rgba(24, 18, 14, 0.90) 50%, rgba(12, 9, 8, 0.96) 100%),
+    url('/cafe-bg.jpg') center/cover fixed;
+}
+
+/* Authentic EA FC / FIFA Online Stadium Stage Background */
+.bg-fifa-theme {
+  background: 
+    linear-gradient(180deg, rgba(5, 8, 16, 0.72) 0%, rgba(8, 13, 26, 0.80) 45%, rgba(4, 6, 12, 0.96) 100%),
+    url('/fifa-stadium-bg.jpg') center top/cover fixed;
+}
+
+@keyframes screenShake {
+  0% { transform: translate(0, 0) scale(1); }
+  10% { transform: translate(-4px, 6px) scale(1.02); }
+  20% { transform: translate(6px, -4px) scale(1.02); }
+  30% { transform: translate(-6px, -4px) scale(1.01); }
+  40% { transform: translate(4px, 4px) scale(1.01); }
+  50% { transform: translate(-2px, 2px) scale(1.005); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+.animate-screen-shake {
+  animation: screenShake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes flameThrower {
+  0%, 100% { height: 40px; opacity: 0.6; filter: drop-shadow(0 0 10px #f97316); }
+  50% { height: 180px; opacity: 1; filter: drop-shadow(0 0 35px #ea580c); }
+}
+
+.flame-pillar {
+  animation: flameThrower 0.4s ease-in-out infinite alternate;
+}
+
+/* Ambient dynamic glows */
+.ambient-lighting {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: 
+    radial-gradient(circle 600px at 50% 15%, rgba(245, 158, 11, 0.12), transparent 70%),
+    radial-gradient(circle 500px at 15% 85%, rgba(59, 130, 246, 0.08), transparent 70%),
+    radial-gradient(circle 500px at 85% 85%, rgba(239, 68, 68, 0.08), transparent 70%);
+}
+
+/* Custom styles for CS2 roulette and animations */
+.glow-amber {
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.4);
+}
+
+.glow-purple {
+  box-shadow: 0 0 35px -5px rgba(168, 85, 247, 0.4);
+}
+
+.glow-blue {
+  box-shadow: 0 0 35px -5px rgba(59, 130, 246, 0.4);
+}
+
+.glow-red {
+  box-shadow: 0 0 40px -5px rgba(239, 68, 68, 0.5);
+}
+
+.glow-gold {
+  box-shadow: 0 0 45px 0px rgba(234, 179, 8, 0.6);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(24, 24, 27, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(82, 82, 91, 0.6);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(113, 113, 122, 0.8);
+}
