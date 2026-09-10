@@ -1,63 +1,58 @@
-# Hướng Dẫn Xuất Bản Trang Web "Hôm Nay Uống Gì?" Lên Internet (Miễn Phí 100%)
+# Hướng Dẫn Xuất Bản Trang Web "Hôm Nay Uống Gì?" Lên GitHub & Internet (Miễn Phí 100%)
 
-Dự án đã được cấu hình tối ưu để đưa lên các dịch vụ máy chủ đám mây miễn phí tốt nhất hiện nay (Vercel, Netlify, Cloudflare Pages, GitHub Pages) với đầy đủ chứng chỉ bảo mật HTTPS và hỗ trợ tên miền riêng tùy chỉnh.
+Dự án đã được cấu hình tối ưu để đưa lên GitHub của bạn (`danglio/homnayuonggi`) và các dịch vụ lưu trữ đám mây miễn phí tốt nhất (GitHub Pages, Vercel, Netlify) với đầy đủ chứng chỉ bảo mật HTTPS.
 
 ---
 
-## CÁCH 1 (Khuyên Dùng Nhất): Đưa Lên GitHub & Deploy Bằng Vercel
+## 🚀 CÁCH 1: Đẩy Lên GitHub Của Bạn (`danglio/homnayuonggi`)
 
-### Bước 1: Tạo Repository Trên GitHub
-1. Mở trình duyệt, truy cập vào [https://github.com/new](https://github.com/new).
-2. Đặt tên kho lưu trữ (Repository name): `homnay-uonggi`.
-3. Chọn chế độ **Public** (hoặc Private tùy bạn) rồi bấm **Create repository**.
+### Bước 1: Tạo Repository Mới Trên GitHub
+1. Mở trình duyệt web và vào: **[https://github.com/new](https://github.com/new)**
+2. Nhập **Repository name**: `homnayuonggi`
+3. Đặt trạng thái: **Public**
+4. ⚠️ **Lưu ý quan trọng**: Không tick chọn *"Add a README file"*, *"Add .gitignore"* hay *"Choose a license"* (vì dự án trên máy bạn đã có sẵn đầy đủ rồi).
+5. Bấm nút xanh **Create repository**.
 
-### Bước 2: Đẩy Code Từ Máy Mac Lên GitHub
-Mở Terminal trên máy Mac của bạn và chạy các lệnh sau (thay `<tai-khoan-github-cua-ban>` bằng username GitHub của bạn):
+### Bước 2: Đẩy Mã Nguồn Lên GitHub
+Mở Terminal trên máy Mac của bạn và chạy 2 câu lệnh sau:
 
 ```bash
 cd /Users/admin/Documents/0.WORK/13.LIO_ECOM/homnay-uonggi
-git branch -M main
-git remote add origin https://github.com/<tai-khoan-github-cua-ban>/homnay-uonggi.git
+git remote add origin https://github.com/danglio/homnayuonggi.git
 git push -u origin main
 ```
 
-### Bước 3: Đưa Lên Mạng Trực Tuyến Qua Vercel
-1. Truy cập [https://vercel.com](https://vercel.com) và bấm **Sign Up** (hoặc Log In) bằng tài khoản **GitHub**.
-2. Tại bảng điều khiển Vercel, bấm nút **"Add New..."** ➔ Chọn **"Project"**.
-3. Danh sách kho GitHub sẽ hiện ra, tìm `homnay-uonggi` và bấm **"Import"**.
-4. Giữ nguyên tất cả cài đặt mặc định (Vercel tự nhận diện Vite + React), bấm nút **"Deploy"**.
-5. Sau khoảng 30 giây, Vercel sẽ cấp cho bạn một đường link chính thức (ví dụ: `https://homnay-uonggi.vercel.app`).
-   * Bất kỳ ai dùng điện thoại 4G hay máy tính ở bất cứ đâu trên thế giới đều có thể vào chơi mở hòm!
-   * Mỗi khi bạn sửa code và gõ `git push`, trang web sẽ tự động cập nhật sau 10 giây!
+*(Nếu GitHub yêu cầu đăng nhập qua Terminal, bạn chỉ cần nhập Personal Access Token (PAT) hoặc làm theo hướng dẫn xác thực trình duyệt của GitHub).*
 
 ---
 
-## CÁCH 2 (Nhanh Nhất Không Cần GitHub): Dùng Lệnh Vercel CLI
+## 🌐 CÁCH 2: Tự Động Bật GitHub Pages (Có Link Web Ngay Trên GitHub)
 
-Nếu bạn muốn có ngay link web trong 1 phút mà không cần tạo tài khoản GitHub:
-
-1. Trong Terminal, chạy lệnh:
-   ```bash
-   cd /Users/admin/Documents/0.WORK/13.LIO_ECOM/homnay-uonggi
-   npx vercel
-   ```
-2. Đăng nhập qua email hoặc GitHub theo hướng dẫn trên màn hình.
-3. Bấm `Enter` để đồng ý các thiết lập mặc định.
-4. Terminal sẽ in ra đường dẫn trang web trực tuyến ngay lập tức!
+Sau khi đã đẩy code lên GitHub ở Bước 2:
+1. Vào trang repository: `https://github.com/danglio/homnayuonggi`
+2. Bấm vào tab **Settings** (ở trên cùng bên phải) ➔ chọn mục **Pages** ở thanh bên trái.
+3. Ở phần **Build and deployment** ➔ mục **Source**: chọn **GitHub Actions**.
+4. Dự án đã có sẵn file workflow tự động `.github/workflows/deploy.yml`. Khi bạn push code, GitHub sẽ tự động build và cấp link trang web trực tuyến:
+   👉 **`https://danglio.github.io/homnayuonggi/`**
+5. Bạn có thể copy link này gửi ngay cho bạn bè trên Facebook hoặc Zalo!
 
 ---
 
-## CÁCH 3: Gắn Tên Miền Riêng (Ví dụ: `homnayuonggi.vn` hoặc `.com`)
+## ⚡ CÁCH 3 (Khuyên Dùng): Kết Nối Vercel Để Có Tên Miền Đẹp Siêu Tốc
 
-1. Vào dự án của bạn trên Vercel ➔ Chọn tab **Settings** ➔ **Domains**.
-2. Nhập tên miền bạn sở hữu (ví dụ: `homnayuonggi.vn`) và bấm **Add**.
-3. Vercel sẽ cung cấp bản ghi DNS (A record hoặc CNAME). Bạn chỉ cần copy dán vào trang quản lý tên miền (như iNet, Mắt Bão, GoDaddy...).
-4. Sau 5-15 phút, trang web của bạn sẽ chạy chính thức trên tên miền riêng với ổ khóa xanh HTTPS miễn phí trọn đời!
+1. Truy cập **[https://vercel.com](https://vercel.com)** ➔ Đăng nhập bằng tài khoản **GitHub** của bạn (`danglio`).
+2. Bấm **"Add New..."** ➔ Chọn **"Project"**.
+3. Vercel sẽ liệt kê các repo của bạn, bấm **"Import"** cạnh repo `homnayuonggi`.
+4. Bấm nút **"Deploy"** (không cần thay đổi gì thêm).
+5. Sau 20-30 giây, bạn sẽ có ngay địa chỉ web toàn cầu:
+   👉 **`https://homnayuonggi.vercel.app`**
+   * Tự động cập nhật mỗi khi bạn push code mới.
+   * Tốc độ tải cực nhanh tại Việt Nam.
 
 ---
 
-## Cập Nhật Link GitHub & Facebook Cá Nhân Trong Code
-
-Trong file `src/App.tsx`:
-* Tìm `href="https://github.com"` ➔ Thay bằng link GitHub của bạn (ví dụ: `https://github.com/username/homnay-uonggi`).
-* Nút Facebook hiện tại đã tự động liên kết với tính năng **Chia sẻ bài viết lên Facebook (Facebook Share Dialog)** của người dùng!
+## 📱 Các Liên Kết Đã Được Cài Đặt Sẵn Trong Ứng Dụng:
+- **Logo ứng dụng**: Đã tạo logo 3D neon ly nước trà sữa phát sáng tuyệt đẹp (`/logo.png`, `/favicon.png`).
+- **Nút GitHub**: Trỏ trực tiếp đến `https://github.com/danglio/homnayuonggi`.
+- **Nút Facebook**: Trỏ trực tiếp đến trang cá nhân của bạn: `https://www.facebook.com/share/1BjrRKK3nE/?mibextid=wwXIfr`.
+- **Hiệu ứng**: Đầy đủ 2 chế độ (Vòng quay CS2 roulette & Mở thẻ FIFA Walkout 3D đường hầm, pháo lửa, quốc kỳ, vị trí thẻ).
